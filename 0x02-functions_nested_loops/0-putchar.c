@@ -7,6 +7,7 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	char str[] = "_putchar";
+	_putchar(str);
 	return (0);
 }
