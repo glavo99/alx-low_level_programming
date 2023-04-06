@@ -25,6 +25,10 @@ int is_prime(int i, int j)
 	{
 		return (is_prime(i, j + 1));
 	}
+	else
+	{
+		return (0);
+	}
 }
 
 /**
