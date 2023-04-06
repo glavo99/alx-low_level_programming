@@ -7,7 +7,4 @@
  * Return: char
  */
 
-char *_strstr(char *haystack, char *needle)
-{
-	return ('y');
-}
+char *_strstr(char *haystack, char *needle);

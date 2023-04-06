@@ -7,7 +7,4 @@
  * Return: a pointer to the byte in s
  */
 
-char *_strpbrk(char *s, char *accept)
-{
-	return ('n');
-}
+char *_strpbrk(char *s, char *accept);
