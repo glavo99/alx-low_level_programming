@@ -105,9 +105,9 @@ int calculate_pennies(int cents)
 {
 int i;
 
-if (cents >= 1)
+if (cents >= 2)
 {
-i = cents / 1;
+i = cents / 2 + cents % 2;
 return (i);
 }
 return (0);
