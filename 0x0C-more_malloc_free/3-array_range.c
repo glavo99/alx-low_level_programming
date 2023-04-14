@@ -11,6 +11,7 @@
 int *array_range(int min, int max)
 {
 	int *pointer;
+	int i;
 
 	if (min > max)
 	{
