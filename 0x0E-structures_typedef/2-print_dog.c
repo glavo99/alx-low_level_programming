@@ -11,7 +11,7 @@ void print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		return (void);
+		return;
 	}
 	else
 	{
@@ -19,7 +19,7 @@ void print_dog(struct dog *d)
 		{
 			(*d).name = "(nil)";
 		}
-		if ((*d).age == NULL)
+		if (!(*d).age)
 		{
 			(*d).age = 0;
 		}
