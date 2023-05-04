@@ -45,8 +45,11 @@ int _pow_recursion(int x, int y)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int j, k, l;
-	unsigned int i = count(b);
+	unsigned int i;
 
+	if (!b)
+		return (0);
+	i = count(b);
 	for (j = i + 1, k = 0, l = 0; j != 0; j--, k++)
 	{
 		if (b[j - 1] == '1')
