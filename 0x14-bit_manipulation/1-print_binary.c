@@ -15,7 +15,7 @@ unsigned long int powertwo(unsigned long int x)
 	{
 		k *= 2;
 	}
-	return (k / 2);
+	return (k * 0.5);
 }
 
 /**
@@ -42,7 +42,7 @@ void print_binary(unsigned long int n)
 			if ((i * 0.5) <= j)
 			{
 				_putchar('1');
-				j = j - (i / 2);
+				j = j - (i * 0.5);
 			}
 			else
 			{
