@@ -25,9 +25,13 @@ unsigned long int powertwo(unsigned long int x)
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int i = powertwo(n);
-	unsigned long int j;
+	unsigned long int i, j;
 
+	if (!n)
+	{
+		return;
+	}
+	i = powertwo(n);
 	if (!i)
 	{
 		_putchar('0');
