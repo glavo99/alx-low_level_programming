@@ -27,10 +27,6 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int i, j;
 
-	if (!n)
-	{
-		return;
-	}
 	i = powertwo(n);
 	if (!i)
 	{
