@@ -7,9 +7,9 @@
  * @x: integer to not exceed
  * Return: integer
  */
-int powertwo(int x)
+unsigned long int powertwo(unsigned long int x)
 {
-	int i, k = 1;
+	unsigned long int i, k = 1;
 
 	for (i = 0; k <= x; i++)
 	{
@@ -25,8 +25,8 @@ int powertwo(int x)
  */
 void print_binary(unsigned long int n)
 {
-	int i = powertwo(n);
-	int j;
+	unsigned long int i = powertwo(n);
+	unsigned long int j;
 
 	if (!i)
 	{
