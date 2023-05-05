@@ -8,7 +8,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int number = 1UL << (sizeof(unsigned long int) * 8 - 1);
+	unsigned long int number = 1UL << (sizeof(unsigned long int) * 8);
 	unsigned long int i = 0;
 
 	while (number)
