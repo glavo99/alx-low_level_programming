@@ -8,7 +8,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int i = 0, fp;
+	int i, fp;
 
 	if (!filename)
 	{
@@ -18,16 +18,14 @@ int create_file(const char *filename, char *text_content)
 	{
 		text_content = "";
 	}
-	while (*text_content)
-	{
-		i++;
-	}
+	for (i = 0; text_content != '\0'; i++)
+		;
 	fp = open(filename, O_CREAT | O_RDWR | O_TRUNC, 600);
 	if (fp == -1)
 	{
 		return (-1);
 	}
 	write(fp, text_content, i);
-	close (fp);
+	close(fp);
 	return (1);
 }
